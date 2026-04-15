@@ -22,9 +22,9 @@ body::before {
     width: 100%;
     height: 100%;
     background:
-        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255, 99, 132, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(54, 162, 235, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 20% 80%, #22cc55, transparent 50%),
+        radial-gradient(circle at 80% 20%, #00f0ff, transparent 50%),
+        radial-gradient(circle at 40% 40%, #0066ff, transparent 50%);
     z-index: -1;
 }
 
@@ -409,4 +409,60 @@ footer {
     .contact-form h3 {
         font-size: 24px;
     }
+}
+
+.blog {
+    background: white;
+    border-radius: 8px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.blog-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f8fafc;
+    transition: 0.2s;
+}
+
+.blog-card:hover {
+    transform: translateY(-4px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.blog-card h4 {
+    padding: 12px;
+    margin: 0;
+}
+
+.blog-card p {
+    padding: 0 12px;
+    color: #687078;
+}
+
+.blog-card small {
+    padding: 0 12px;
+    display: block;
+    color: gray;
+}
+
+.blog-card a {
+    display: block;
+    padding: 12px;
+    color: #7877c6;
+    text-decoration: none;
+    font-weight: 500;
 }
